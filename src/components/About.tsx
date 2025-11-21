@@ -110,7 +110,7 @@ export function About() {
                     Video Games
                   </h4>
                   <p className="text-xs text-muted-foreground font-body">
-                    Gamer casual, adoro explorar mundos virtuais e se divertir
+                    Gamer casual, adoro explorar mundos virtuais e me divertir
                   </p>
                 </div>
 
