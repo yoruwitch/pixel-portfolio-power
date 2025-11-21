@@ -6,11 +6,12 @@ export function Contact() {
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-pixel mb-6 text-foreground">
-          Vamos Conversar?
+          Vamos Trabalhar Juntos?
         </h2>
         <p className="text-lg text-muted-foreground font-body mb-12 max-w-2xl mx-auto">
-          Estou sempre aberta a novos desafios e oportunidades.
-          Entre em contato e vamos construir algo incrível juntos!
+          Estou aberta a novos desafios, oportunidades e feedback. Se você
+          procura uma Junior Developer motivada, criativa e sempre disposta a
+          aprender, me envie uma mensagem. Vamos construir algo incrível! 🚀
         </p>
 
         {/* Main CTA */}
@@ -20,7 +21,7 @@ export function Contact() {
             className="btn-arcade pixel-corners bg-primary hover:bg-primary-glow text-primary-foreground font-pixel text-sm px-8 py-6 border-2 border-primary"
             asChild
           >
-            <a href="mailto:seu.email@exemplo.com">
+            <a href="mailto:evelyn.fernandes4@gmail.com">
               <Mail className="mr-2 h-5 w-5" />
               Enviar Email
             </a>
@@ -48,7 +49,7 @@ export function Contact() {
             asChild
           >
             <a
-              href="https://github.com"
+              href="https://github.com/yoruwitch"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -64,7 +65,7 @@ export function Contact() {
             asChild
           >
             <a
-              href="https://linkedin.com"
+              href="http://linkedin.com/in/evelyn-fernandes"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
@@ -79,7 +80,10 @@ export function Contact() {
             className="btn-arcade pixel-corners border-2 h-14 w-14 hover:bg-foreground hover:text-background"
             asChild
           >
-            <a href="mailto:seu.email@exemplo.com" aria-label="Send Email">
+            <a
+              href="mailto:evelyn.fernandes4@gmail.com"
+              aria-label="Send Email"
+            >
               <Mail className="h-6 w-6" />
             </a>
           </Button>

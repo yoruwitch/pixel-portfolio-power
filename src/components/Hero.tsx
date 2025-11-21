@@ -11,42 +11,69 @@ export function Hero() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-4 h-4 bg-primary opacity-50 pixel-pulse" />
-        <div className="absolute top-40 right-20 w-6 h-6 bg-secondary opacity-40 pixel-pulse" style={{ animationDelay: "0.5s" }} />
-        <div className="absolute bottom-32 left-1/4 w-5 h-5 bg-accent opacity-30 pixel-pulse" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/3 right-1/3 w-4 h-4 bg-primary opacity-40 pixel-pulse" style={{ animationDelay: "1.5s" }} />
+        <div
+          className="absolute top-40 right-20 w-6 h-6 bg-secondary opacity-40 pixel-pulse"
+          style={{ animationDelay: "0.5s" }}
+        />
+        <div
+          className="absolute bottom-32 left-1/4 w-5 h-5 bg-accent opacity-30 pixel-pulse"
+          style={{ animationDelay: "1s" }}
+        />
+        <div
+          className="absolute top-1/3 right-1/3 w-4 h-4 bg-primary opacity-40 pixel-pulse"
+          style={{ animationDelay: "1.5s" }}
+        />
       </div>
 
       <div className="max-w-5xl mx-auto text-center space-y-8 relative z-10">
-        {/* Pixel Avatar Placeholder */}
+        {/* Avatar with GitHub Photo */}
         <div className="inline-block mb-6 slide-in-pixel">
-          <div className="w-32 h-32 mx-auto bg-gradient-arcade rounded-lg pixel-corners shadow-pixel relative">
-            <div className="absolute inset-2 bg-card rounded-lg flex items-center justify-center">
-              <span className="text-5xl">👾</span>
-            </div>
+          <div className="w-32 h-32 mx-auto bg-gradient-arcade rounded-lg pixel-corners shadow-pixel relative overflow-hidden border-2 border-primary">
+            <img
+              src="https://avatars.githubusercontent.com/u/72367997?v=4"
+              alt="Evelyn Fernandes - Desenvolvedora Fullstack JavaScript"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
           </div>
         </div>
 
         {/* Main Headline */}
-        <div className="space-y-4 slide-in-pixel" style={{ animationDelay: "0.2s" }}>
+        <div
+          className="space-y-4 slide-in-pixel"
+          style={{ animationDelay: "0.2s" }}
+        >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-pixel leading-relaxed text-foreground">
-            Desenvolvedora
+            Oi! Sou
             <span className="block mt-2 text-primary dark:neon-glow">
-              Fullstack JavaScript
+              Evelyn Fernandes
             </span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl font-pixel text-muted-foreground mt-4">
-            Potencializada por IA 🤖
+            Desenvolvedora Fullstack JavaScript
+          </p>
+          <p className="text-base sm:text-lg font-pixel text-secondary">
+            Em busca da minha primeira vaga como Junior 🚀
           </p>
         </div>
 
         {/* Description */}
-        <p className="text-base sm:text-lg max-w-2xl mx-auto text-muted-foreground font-body leading-relaxed slide-in-pixel" style={{ animationDelay: "0.4s" }}>
-          Transformo ideias em código com React, Node.js e ferramentas de IA.
-          Focada em entregar valor rapidamente e resolver problemas com criatividade.
+        <p
+          className="text-base sm:text-lg max-w-2xl mx-auto text-muted-foreground font-body leading-relaxed slide-in-pixel"
+          style={{ animationDelay: "0.4s" }}
+        >
+          Engenheira de Software formada pela Universidade Estácio de Sá.
+          Apaixonada por construir aplicações web modernas com React e Node.js.
+          Após 4 anos como educadora, busco minha primeira oportunidade como
+          Junior Developer, trazendo criatividade e determinação para cada
+          projeto.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4 justify-center items-center pt-6 slide-in-pixel" style={{ animationDelay: "0.6s" }}>
+        <div
+          className="flex flex-wrap gap-4 justify-center items-center pt-6 slide-in-pixel"
+          style={{ animationDelay: "0.6s" }}
+        >
           <Button
             size="lg"
             onClick={scrollToProjects}
@@ -55,7 +82,7 @@ export function Hero() {
             Ver Projetos
             <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
-          
+
           <div className="flex gap-3">
             <Button
               size="icon"
@@ -63,29 +90,39 @@ export function Hero() {
               className="btn-arcade pixel-corners border-2 h-12 w-12"
               asChild
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a
+                href="https://github.com/yoruwitch"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
                 <Github className="h-5 w-5" />
               </a>
             </Button>
-            
+
             <Button
               size="icon"
               variant="outline"
               className="btn-arcade pixel-corners border-2 h-12 w-12"
               asChild
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a
+                href="http://linkedin.com/in/evelyn-fernandes"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
-            
+
             <Button
               size="icon"
               variant="outline"
               className="btn-arcade pixel-corners border-2 h-12 w-12"
               asChild
             >
-              <a href="mailto:seu.email@exemplo.com" aria-label="Email">
+              <a href="mailto:evelyn.fernandes4@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -93,7 +130,10 @@ export function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="pt-12 slide-in-pixel" style={{ animationDelay: "0.8s" }}>
+        <div
+          className="pt-12 slide-in-pixel"
+          style={{ animationDelay: "0.8s" }}
+        >
           <div className="inline-block animate-bounce">
             <ArrowDown className="h-6 w-6 text-muted-foreground" />
           </div>

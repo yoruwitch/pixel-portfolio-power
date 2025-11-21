@@ -6,9 +6,9 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm font-body text-muted-foreground text-center sm:text-left">
-            © {currentYear} Portfólio Dev. Feito com ❤️ e muito ☕
+            © {currentYear} Feito com ❤️ e muito ☕
           </p>
-          
+
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
             <span className="text-xs font-pixel text-muted-foreground">
@@ -19,7 +19,7 @@ export function Footer() {
 
         <div className="mt-6 text-center">
           <p className="text-xs font-body text-muted-foreground/70">
-            Design inspirado em jogos clássicos de 8-bit • Performance otimizada para web
+            Design inspirado em jogos clássicos de 8-bit
           </p>
         </div>
       </div>

@@ -15,9 +15,9 @@ const coreSkills = [
 
 const aiTools = [
   { name: "ChatGPT / Claude", category: "ai" },
+  { name: "Google Gemini", category: "ai" },
   { name: "GitHub Copilot", category: "ai" },
   { name: "Cursor AI", category: "ai" },
-  { name: "v0.dev", category: "ai" },
   { name: "Prompt Engineering", category: "ai" },
 ];
 
@@ -37,7 +37,9 @@ export function TechStack() {
           <div className="bg-card border-2 border-border pixel-corners p-6 sm:p-8 shadow-pixel">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 bg-primary pixel-pulse" />
-              <h3 className="text-xl font-pixel text-foreground">Core Technologies</h3>
+              <h3 className="text-xl font-pixel text-foreground">
+                Core Technologies
+              </h3>
             </div>
             <div className="flex flex-wrap gap-3">
               {coreSkills.map((skill) => (
@@ -53,29 +55,34 @@ export function TechStack() {
           </div>
 
           {/* AI Workflow - The Differentiator */}
-          <div className="bg-gradient-arcade p-[2px] pixel-corners shadow-glow">
-            <div className="bg-card p-6 sm:p-8 pixel-corners">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-secondary pixel-pulse" />
-                <h3 className="text-xl font-pixel text-foreground">AI Workflow</h3>
-                <Badge variant="secondary" className="font-pixel text-[10px] pixel-corners">
-                  Diferencial
+          <div className="bg-card border-2 border-border pixel-corners p-6 sm:p-8 shadow-pixel">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-3 h-3 bg-primary pixel-pulse" />
+              <h3 className="text-xl font-pixel text-foreground">
+                AI Workflow
+              </h3>
+              <Badge
+                variant="outline"
+                className="font-pixel text-[10px] pixel-corners"
+              >
+                Diferencial
+              </Badge>
+            </div>
+            <p className="text-sm text-muted-foreground font-body mb-6 max-w-3xl">
+              Utilizo ferramentas de IA para acelerar o desenvolvimento,
+              melhorar a qualidade do código e focar na resolução criativa de
+              problemas.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {aiTools.map((tool) => (
+                <Badge
+                  key={tool.name}
+                  variant="outline"
+                  className="px-4 py-2 text-sm font-body border-2 pixel-corners hover:bg-primary hover:text-primary-foreground hover:-translate-y-0.5 transition-all cursor-default"
+                >
+                  🤖 {tool.name}
                 </Badge>
-              </div>
-              <p className="text-sm text-muted-foreground font-body mb-6 max-w-3xl">
-                Utilizo ferramentas de IA para acelerar o desenvolvimento, melhorar a qualidade do código
-                e focar na resolução criativa de problemas.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {aiTools.map((tool) => (
-                  <Badge
-                    key={tool.name}
-                    className="px-4 py-2 text-sm font-body border-2 pixel-corners bg-secondary/10 border-secondary text-secondary-foreground hover:bg-secondary hover:-translate-y-0.5 transition-all cursor-default"
-                  >
-                    🤖 {tool.name}
-                  </Badge>
-                ))}
-              </div>
+              ))}
             </div>
           </div>
         </div>

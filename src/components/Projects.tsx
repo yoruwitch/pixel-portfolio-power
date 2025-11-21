@@ -5,33 +5,36 @@ import { ExternalLink, Github, Sparkles } from "lucide-react";
 const projects = [
   {
     id: 1,
-    name: "E-Commerce Platform",
-    tagline: "Loja online completa com checkout e painel admin",
-    description: "Plataforma de e-commerce fullstack com autenticação, carrinho de compras, processamento de pagamentos e painel administrativo.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    aiAssisted: true,
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    name: "Pokédex React",
+    tagline: "Consultor de Pokémon consumindo API",
+    description:
+      "Aplicação React que consome a PokéAPI para exibir informações detalhadas sobre Pokémons. Interface interativa com busca, filtros e cards informativos dos personagens.",
+    tech: ["React", "JavaScript", "API REST", "CSS"],
+    aiAssisted: false,
+    liveUrl: "https://pokedex-react-quest.vercel.app/",
+    githubUrl: "https://github.com/yoruwitch/pokedex-react-quest",
   },
   {
     id: 2,
-    name: "Task Manager AI",
-    tagline: "Gerenciador de tarefas com sugestões inteligentes",
-    description: "Aplicação de gerenciamento de tarefas com IA que sugere prioridades e otimiza seu fluxo de trabalho.",
-    tech: ["Next.js", "OpenAI", "MongoDB", "Tailwind"],
-    aiAssisted: true,
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    name: "Magic E-Commerce",
+    tagline: "Loja online de Magic: The Gathering",
+    description:
+      "Plataforma de e-commerce funcional para venda de cartas de Magic: The Gathering. Desenvolvido com HTML, CSS e JavaScript puro, sem dependências externas.",
+    tech: ["HTML", "CSS", "JavaScript", "Responsivo"],
+    aiAssisted: false,
+    liveUrl: "https://yoruwitch.github.io/projeto-magic/",
+    githubUrl: "https://github.com/yoruwitch/projeto-magic",
   },
   {
     id: 3,
-    name: "Portfolio Generator",
-    tagline: "Gerador de portfólios personalizáveis",
-    description: "Ferramenta que permite criar portfólios profissionais com temas customizáveis e deploy automático.",
-    tech: ["React", "TypeScript", "Vercel", "shadcn/ui"],
+    name: "Python For Kids",
+    tagline: "Projeto educacional de programação",
+    description:
+      "Projeto acadêmico inovador ensinando programação Python para crianças usando Jupyter Notebook e Google Colab. Materiais didáticos com exercícios práticos e interativos.",
+    tech: ["Python", "Jupyter", "Google Colab", "Educação"],
     aiAssisted: false,
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    liveUrl: "https://github.com/yoruwitch/pythonForKids",
+    githubUrl: "https://github.com/yoruwitch/pythonForKids",
   },
 ];
 
@@ -43,7 +46,8 @@ export function Projects() {
           Projetos em Destaque
         </h2>
         <p className="text-center text-muted-foreground font-body mb-12 max-w-2xl mx-auto">
-          Seleção dos meus melhores trabalhos que demonstram habilidades técnicas e criatividade
+          Seleção dos meus melhores trabalhos que demonstram habilidades
+          técnicas e criatividade
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -100,7 +104,11 @@ export function Projects() {
                   className="flex-1 btn-arcade pixel-corners text-xs font-pixel bg-primary hover:bg-primary-glow"
                   asChild
                 >
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <ExternalLink className="h-4 w-4 mr-1" />
                     Demo
                   </a>
@@ -111,7 +119,11 @@ export function Projects() {
                   className="flex-1 btn-arcade pixel-corners text-xs font-pixel"
                   asChild
                 >
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="h-4 w-4 mr-1" />
                     Code
                   </a>

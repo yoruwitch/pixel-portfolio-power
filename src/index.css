@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
 
 @layer base {
   :root {
-    /* Light Mode - Arcade Cabinet Vibes */
+    /* Light Mode - Yoshi Colors */
     --background: 210 40% 98%;
     --foreground: 220 90% 12%;
 
@@ -18,85 +18,101 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 90% 12%;
 
-    /* Retro Cyan - Main brand color */
-    --primary: 184 95% 45%;
+    /* Yoshi Green - Main brand color */
+    --primary: 135 85% 48%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 184 100% 65%;
+    --primary-glow: 135 100% 65%;
 
-    /* Arcade Pink */
-    --secondary: 330 85% 65%;
-    --secondary-foreground: 0 0% 100%;
+    /* Yoshi Yellow - Secondary accent */
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 220 90% 12%;
 
-    /* Soft Purple for accents */
-    --accent: 270 70% 70%;
+    /* Peachy Orange for accents */
+    --accent: 15 100% 65%;
     --accent-foreground: 220 90% 12%;
 
-    /* Muted Game Boy Green tints */
-    --muted: 150 20% 92%;
-    --muted-foreground: 150 10% 40%;
+    /* Light green tints */
+    --muted: 135 30% 90%;
+    --muted-foreground: 135 20% 40%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 88%;
-    --input: 220 20% 88%;
-    --ring: 184 95% 45%;
+    --border: 135 25% 88%;
+    --input: 135 25% 88%;
+    --ring: 135 85% 48%;
 
     --radius: 0.25rem;
 
     /* Gradients */
-    --gradient-arcade: linear-gradient(135deg, hsl(184, 95%, 45%) 0%, hsl(270, 70%, 70%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(210, 40%, 98%) 0%, hsl(150, 20%, 92%) 100%);
+    --gradient-arcade: linear-gradient(
+      135deg,
+      hsl(135, 85%, 48%) 0%,
+      hsl(45, 100%, 50%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(210, 40%, 98%) 0%,
+      hsl(135, 30%, 92%) 100%
+    );
 
     /* Shadows with pixel-style */
     --shadow-pixel: 4px 4px 0px hsl(220, 90%, 12% / 0.2);
-    --shadow-glow: 0 0 20px hsl(184, 100%, 65% / 0.3);
+    --shadow-glow: 0 0 20px hsl(135, 100%, 65% / 0.3);
 
     /* Transitions */
     --transition-arcade: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    /* Dark Mode - Terminal/Retro Night */
+    /* Dark Mode - Yoshi Retro Night */
     --background: 220 90% 5%;
-    --foreground: 150 90% 75%;
+    --foreground: 135 70% 75%;
 
     --card: 220 85% 8%;
-    --card-foreground: 150 90% 75%;
+    --card-foreground: 135 70% 75%;
 
     --popover: 220 85% 8%;
-    --popover-foreground: 150 90% 75%;
+    --popover-foreground: 135 70% 75%;
 
-    /* Neon Terminal Green */
-    --primary: 150 90% 55%;
+    /* Neon Yoshi Green */
+    --primary: 135 100% 52%;
     --primary-foreground: 220 90% 5%;
-    --primary-glow: 150 100% 70%;
+    --primary-glow: 135 100% 70%;
 
-    /* Hot Pink accent */
-    --secondary: 330 100% 60%;
+    /* Yoshi Yellow neon */
+    --secondary: 45 100% 55%;
     --secondary-foreground: 220 90% 5%;
 
-    /* Electric Blue */
-    --accent: 200 100% 60%;
+    /* Peachy neon accent */
+    --accent: 15 100% 65%;
     --accent-foreground: 220 90% 5%;
 
     --muted: 220 60% 15%;
-    --muted-foreground: 150 30% 60%;
+    --muted-foreground: 135 50% 60%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 220 90% 5%;
 
-    --border: 220 60% 20%;
-    --input: 220 60% 20%;
-    --ring: 150 90% 55%;
+    --border: 135 50% 25%;
+    --input: 135 50% 25%;
+    --ring: 135 100% 52%;
 
     /* Dark gradients */
-    --gradient-arcade: linear-gradient(135deg, hsl(150, 90%, 55%) 0%, hsl(200, 100%, 60%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(220, 90%, 5%) 0%, hsl(220, 85%, 8%) 100%);
+    --gradient-arcade: linear-gradient(
+      135deg,
+      hsl(135, 100%, 52%) 0%,
+      hsl(45, 100%, 55%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(220, 90%, 5%) 0%,
+      hsl(220, 85%, 8%) 100%
+    );
 
     /* Neon shadows */
-    --shadow-pixel: 4px 4px 0px hsl(150, 90%, 55% / 0.3);
-    --shadow-glow: 0 0 30px hsl(150, 100%, 70% / 0.5);
+    --shadow-pixel: 4px 4px 0px hsl(135, 100%, 52% / 0.3);
+    --shadow-glow: 0 0 30px hsl(135, 100%, 70% / 0.5);
   }
 }
 
@@ -112,7 +128,12 @@
     image-rendering: crisp-edges;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-pixel;
   }
 }
@@ -139,12 +160,13 @@
     border-style: solid;
     border-width: 4px;
     border-image: repeating-linear-gradient(
-      45deg,
-      hsl(var(--border)) 0px,
-      hsl(var(--border)) 2px,
-      transparent 2px,
-      transparent 4px
-    ) 4;
+        45deg,
+        hsl(var(--border)) 0px,
+        hsl(var(--border)) 2px,
+        transparent 2px,
+        transparent 4px
+      )
+      4;
   }
 
   /* Scanline effect for terminal feel */
@@ -153,7 +175,7 @@
   }
 
   .scanlines::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -174,10 +196,18 @@
   /* Pixel corners */
   .pixel-corners {
     clip-path: polygon(
-      0 4px, 4px 4px, 4px 0,
-      calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
-      100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
-      4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
+      0 4px,
+      4px 4px,
+      4px 0,
+      calc(100% - 4px) 0,
+      calc(100% - 4px) 4px,
+      100% 4px,
+      100% calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) 100%,
+      4px 100%,
+      4px calc(100% - 4px),
+      0 calc(100% - 4px)
     );
   }
 }
@@ -185,12 +215,18 @@
 @layer utilities {
   /* Typing animation */
   @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
 
   @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+      border-color: transparent;
+    }
   }
 
   .typing-effect {
@@ -202,11 +238,12 @@
 
   /* Pixel pulse */
   @keyframes pixel-pulse {
-    0%, 100% { 
+    0%,
+    100% {
       transform: scale(1);
       filter: brightness(1);
     }
-    50% { 
+    50% {
       transform: scale(1.05);
       filter: brightness(1.2);
     }
